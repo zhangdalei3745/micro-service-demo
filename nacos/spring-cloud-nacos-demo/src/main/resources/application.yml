@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: nacos
+  application:
+    name: spring-cloud-nacos-demo

@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+    consul:
+      discovery:
+        acl-token: a3c9a52b-6df9-9415-aab1-8e9d6fcd0b7a
+        heartbeat:
+          reregister-service-on-failure: false
+          enabled: false
+          ttl: 30
+        register-health-check: false
+        register: true
+        enabled: true
+      host: 114.67.242.135
+      port: 8500
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
