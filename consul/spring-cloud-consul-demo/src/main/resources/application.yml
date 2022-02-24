@@ -2,4 +2,4 @@ spring:
   profiles:
     active: consul
   application:
-    name: spring-cloud-consul-demo
+    name: ${JMESH_SERVICE_ID}

@@ -4,7 +4,7 @@ spring:
       enabled: true
     consul:
       discovery:
-        acl-token: ${JMESH_CONFIG_TOKEN}
+        acl-token: a3c9a52b-6df9-9415-aab1-8e9d6fcd0b7a
         heartbeat:
           reregister-service-on-failure: false
           enabled: false
@@ -12,8 +12,8 @@ spring:
         register-health-check: false
         register: true
         enabled: true
-      host: ${JMESH_REGISTRY_HOST}
-      port: ${JMESH_REGISTRY_PORT}
+      host: 114.67.242.135
+      port: 8500
 management:
   endpoints:
     web:
