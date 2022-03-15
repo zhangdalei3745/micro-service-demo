@@ -24,6 +24,6 @@ public class DemoConsulController {
 
     @GetMapping()
     public String call(){
-        return "hello";
+        return "hello: " + System.getenv("JMESH_SERVICE_GROUP");
     }
 }

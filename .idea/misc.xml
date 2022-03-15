@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/demo-nacos/pom.xml" />
         <option value="$PROJECT_DIR$/nacos/pom.xml" />
         <option value="$PROJECT_DIR$/consul/pom.xml" />
+        <option value="$PROJECT_DIR$/consul/jmsf-consul-demo/pom.xml" />
       </list>
     </option>
   </component>

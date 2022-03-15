@@ -6,4 +6,4 @@ management:
 spring:
   cloud:
     discovery:
-      enabled: false
+      enabled: true

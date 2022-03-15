@@ -10,9 +10,10 @@ import org.springframework.web.client.RestTemplate;
 public class DemoConsulApplication {
 
     public static void main(String[] args) {
-//        System.setProperty("JMESH_REGISTRY_HOST", "114.67.242.135");
-//        System.setProperty("JMESH_REGISTRY_PORT", "8500");
-//        System.setProperty("JMESH_CONFIG_TOKEN", "a3c9a52b-6df9-9415-aab1-8e9d6fcd0b7a");
+        System.setProperty("JMESH_REGISTRY_HOST", "114.67.242.135");
+        System.setProperty("JMESH_REGISTRY_PORT", "8500");
+        System.setProperty("JMESH_CONFIG_TOKEN", "a3c9a52b-6df9-9415-aab1-8e9d6fcd0b7a");
+        System.setProperty("JMESH_SERVICE_ID", "jmsf-spring-cloud-demo");
         SpringApplication.run(DemoConsulApplication.class, args);
     }
 

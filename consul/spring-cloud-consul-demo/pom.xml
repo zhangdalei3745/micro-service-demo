@@ -18,11 +18,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>com.jdcloud.jmsf</groupId>-->
-<!--            <artifactId>spring-cloud-starter-jmsf</artifactId>-->
-<!--        </dependency>-->
     </dependencies>
 
     <dependencyManagement>

@@ -1,5 +1,26 @@
 spring:
-  profiles:
-    active: consul
   application:
-    name: ${JMESH_SERVICE_ID}
+    name: ${APP_NAME}
+  cloud:
+    consul:
+      discovery:
+        acl-token: ${JMESH_CONFIG_TOKEN}
+        heartbeat:
+          reregister-service-on-failure: false
+          enabled: false
+          ttl: 30
+        register-health-check: false
+        register: false
+      host: ${JMESH_REGISTRY_HOST}
+      port: ${JMESH_REGISTRY_PORT}
+    loadbalancer:
+      enabled: false
+provider:
+  server:
+    name: ${PRIVIDER_NAME}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+sp

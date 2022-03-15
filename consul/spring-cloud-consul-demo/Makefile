@@ -1,8 +1,7 @@
-hub=hub.jdcloud.com
-project=mesh
+hub=hub.jdcloud.com/mesh
 version=2.3-$(shell git rev-parse --short HEAD)
-image=$(hub)/$(project)/spring-cloud-consul-demo:$(version)
-all: build image push
+image=$(hub)/istio-spring-cloud-consul-demo:$(version)
+all: install build push
 install:
 	mvn clean install -DskipTests
 build:

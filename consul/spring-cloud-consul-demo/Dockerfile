@@ -6,5 +6,6 @@ ENV PROFILE=consul
 ENV APP_NAME=demo
 WORKDIR /app
 COPY target/*.jar /app/app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-Dspring.profiles.active=${PROFILE}","-Dspring.application.name=${APP_NAME}","-Dserver.port=8080","-jar","/app/app.jar"]
+COPY src/main/bin/sgm.sh /app/sgm.sh
+EXPOSE 80
+ENTRYPOINT ["/app/sgm.sh"]

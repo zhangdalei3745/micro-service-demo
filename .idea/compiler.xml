@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-nacos-demo" />
+        <module name="spring-cloud-consul-demol" />
         <module name="spring-cloud-consul-demo" />
-        <module name="demo-consul" />
+        <module name="jmsf-consul-demo" />
       </profile>
     </annotationProcessing>
   </component>

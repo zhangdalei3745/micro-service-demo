@@ -2,4 +2,6 @@ spring:
   profiles:
     active: jmsf
   application:
-    name: spring-cloud-consul-demo
+    name: ${JMESH_SERVICE_ID}
+server:
+  port: 8082
