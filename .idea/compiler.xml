@@ -8,16 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-nacos-demo" />
-        <module name="spring-cloud-consul-demol" />
+        <module name="spring-boot-demo" />
         <module name="spring-cloud-consul-demo" />
         <module name="jmsf-consul-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consul" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="nacos" options="" />
+      <module name="spring-boot-demo" options="-parameters" />
       <module name="spring-cloud-consul-demo" options="" />
       <module name="spring-cloud-nacos-demo" options="" />
     </option>
